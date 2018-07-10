@@ -123,7 +123,7 @@ public class Rede {
         if(octetos.length>4)
             s.append("-Err");
         
-        return s.toString().substring(1) + "/" + mask;
+        return s.toString() + "/" + mask;
     }
         
     

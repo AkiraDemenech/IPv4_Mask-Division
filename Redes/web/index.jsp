@@ -94,14 +94,6 @@
 
         </table>
         
-        <H4>
-        
-            <A hRef="IPv4_aTabela.pdf">
-                Versão para Impressão
-            </A>
-        
-        </H4>
-        
         <h3>
             Como se representa uma rede:
         </h3>
@@ -234,12 +226,12 @@
                                             if(div>1)
                                                 out.print("s");
                                             out.println(": ");
-                                            out.println("<br>\n\n");
+                                            out.println("<Br><Br>\n\n");
                                             
                                             Rede[] redes = r.subdividir(div);
                                             for(c=0; c<redes.length; c++)
                                                 if(redes[c].ok())
-                                                    out.println((c+1) + ". <b>" + redes[c].getIp() + "</b>/<i>" + redes[c].getMask() + "</i>\t<br>");
+                                                    out.println("\t" + (c+1) + ".\t <b>" + redes[c].getIp() + "</b>/<i>" + redes[c].getMask() + "</i>\t<br>");
                                             
                                             out.println("\n\n");
                                             
